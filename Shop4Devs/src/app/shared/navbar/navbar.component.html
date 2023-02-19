@@ -1,0 +1,68 @@
+<header class="header">
+
+  <a href="#" class="logo">
+    <img src="/assets/shared-icons/logo.png" alt="logo Shop4Devs">
+    _Shop4Devs
+  </a>
+
+  <nav 
+  class="navbar" [class.active]="isCollapsed">
+    <a>Home</a>
+    <a>Sobre</a>
+    <a>Categorias</a>
+    <a>Produtos</a>
+    <a>Contatos</a>
+  </nav>
+
+  <div class="icons">
+    <fa-icon [icon]="faSearch" id="search-btn" (click)="searchClick()"></fa-icon>
+    <fa-icon [icon]="faShoppingCart" id="cart-btn" (click)="cartClick()"></fa-icon>
+    <fa-icon [icon]="faBars" id="menu-btn" (click)="menuClick()"></fa-icon>
+  </div>
+
+  <div class="search-form" [class.active]="isSearchOpened">
+    <input type="search" id="search-box" placeholder="Search:">
+    <label for="search-box"><fa-icon [icon]="faSearch"></fa-icon></label>
+  </div>
+
+  <div class="cart-items-container" [class.active]="isCartOpened">
+    <div class="cart-item">
+      <span><fa-icon [icon]="faTimes"></fa-icon></span>
+      <img src="/assets/shared-icons/logo.png" alt="icones Java, Github, AWS e Docker em plastico 3D">
+      <div class="content">
+        <h4>Cart Item 01</h4>
+        <div class="price">R$89,90</div>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <span><fa-icon [icon]="faTimes"></fa-icon></span>
+      <img src="/assets/shared-icons/logo.png" alt="icones Java, Github, AWS e Docker em plastico 3D">
+      <div class="content">
+        <h4>Cart Item 02</h4>
+        <div class="price">R$89,90</div>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <span><fa-icon [icon]="faTimes"></fa-icon></span>
+      <img src="/assets/shared-icons/logo.png" alt="icones Java, Github, AWS e Docker em plastico 3D">
+      <div class="content">
+        <h4>Cart Item 03</h4>
+        <div class="price">R$89,90</div>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <span><fa-icon [icon]="faTimes"></fa-icon></span>
+      <img src="/assets/shared-icons/logo.png" alt="icones Java, Github, AWS e Docker em plastico 3D">
+      <div class="content">
+        <h4>Cart Item 04</h4>
+        <div class="price">R$89,90</div>
+      </div>
+    </div>
+
+    <a class="checkout-btn">Ver carrinho</a>
+  </div>
+
+</header>

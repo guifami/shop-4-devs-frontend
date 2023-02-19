@@ -1,0 +1,11 @@
+:root{
+    --navbar: #ffffff;
+    --navbar-border: solid 1px rgba(84, 84, 84, 0.3);
+    --black: #13131a;
+    --white: #ffffff;
+    --gray: #5b5b60;
+}
+
+body{
+    background: var(--white);
+}
