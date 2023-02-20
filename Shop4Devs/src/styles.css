@@ -4,11 +4,15 @@
     --footer-border: solid 1px rgba(84, 84, 84, 0.3);
     --saiba-mais-color: #0b6292;
     --hover-color: #085077;
+    --second-color: #0b6292;
+    --green: #00902b;
+    --red: #d30000;
     --black: #13131a;
     --white: #ffffff;
+    --light: #f3f3f3;
     --gray: #5b5b60;
 }
 
 body{
-    background: var(--white);
+    background: var(--light);
 }
