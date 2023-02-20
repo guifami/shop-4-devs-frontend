@@ -1,0 +1,130 @@
+.pop-content {
+  background: url(/assets/home-images/home-banner.png);
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  background-size: cover;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.mkt {
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    transition: 0.3s ease;
+    font-family: Helvetica;
+    position: relative;
+    width: 60vw;
+    max-width: 1000px;
+    height: 250px;
+    line-height: 30vw;
+    text-align: center;
+    color: #252b37;
+    background-color: var(--white);
+    animation: textColor 10s ease infinite;
+    z-index: 1;
+  }
+
+  .mkt:after {
+    position: absolute;
+    content: "";
+    top: 1vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.75);
+    -webkit-filter: blur(5vw);
+    -moz-filter: blur(5vw);
+    -ms-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+  }
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  }
+
+/* Media queries */
+@media (max-width: 1400px){
+    .mkt {
+        width: 80vw;
+      }
+}
+
+@media (max-width: 1080px){
+    .mkt {
+        width: 90vw;
+      }
+}
+
+@media (max-width: 960px){
+    .pop-content {
+        background: url(/assets/home-images/home-banner-960.png);
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        background-size: cover;
+    }
+    .mkt {
+        width: 70vw;
+      }
+}
+
+@media (max-width: 760px){
+    .mkt {
+        width: 90vw;
+      }
+}
+
+@media (max-width: 585px){
+    .pop-content {
+        background: url(/assets/home-images/home-banner-585.png);
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        background-size: cover;
+    }
+    .mkt {
+        width: 95vw;
+      }
+}
+
+@media (max-width: 320px){
+    .pop-content {
+        background: url(/assets/home-images/home-banner-320.png);
+        width: 100%;
+        max-width: 1000px;
+        height: 100%;
+        background-size: cover;
+    }
+}

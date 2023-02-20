@@ -11,7 +11,7 @@ section{
     padding: 2rem 15%;
 	max-width: 1600px;
     margin: 0 auto;
-    margin-bottom: 100px; /* TIRAR */
+    margin-bottom: 2rem;
 }
   
 .typing-demo {
@@ -41,7 +41,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding-top: 10rem;
+    padding-top: 7rem;
     position: relative;
 }
 
@@ -89,7 +89,7 @@ section{
 
 /* Media Queries */
 
-@media (max-width: 1310px){
+@media (max-width: 1324px){
     .home .image img{
         display: none;
     }
