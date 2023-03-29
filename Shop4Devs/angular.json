@@ -95,6 +95,12 @@
               "node_modules/aos/dist/aos.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/shop-4-devs-frontend/"
+          }
         }
       }
     }

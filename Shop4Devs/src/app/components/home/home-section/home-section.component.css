@@ -133,7 +133,7 @@ section{
 @media (max-width: 640px){
     
     .typing-demo{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .home .content p{
         font-size: 1rem;
@@ -148,7 +148,7 @@ section{
     }
     .home .content h3{
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.06rem;
         font-family: monospace;
         font-weight: 400;
     }

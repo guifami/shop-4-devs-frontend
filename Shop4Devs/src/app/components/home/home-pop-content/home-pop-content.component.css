@@ -1,5 +1,5 @@
 .pop-content {
-  background: url(/assets/home-images/home-banner.png);
+  background: url(https://github.com/guifami/shop-4-devs-frontend/assets/home-images/home-banner.png);
   width: 100%;
   max-width: 1000px;
   height: 100%;
@@ -89,7 +89,7 @@ section{
 
 @media (max-width: 960px){
     .pop-content {
-        background: url(/assets/home-images/home-banner-960.png);
+        background: url(https://github.com/guifami/shop-4-devs-frontend/assets/home-images/home-banner-960.png);
         width: 100%;
         max-width: 1000px;
         height: 100%;
@@ -108,7 +108,7 @@ section{
 
 @media (max-width: 585px){
     .pop-content {
-        background: url(/assets/home-images/home-banner-585.png);
+        background: url(https://github.com/guifami/shop-4-devs-frontend/assets/home-images/home-banner-585.png);
         width: 100%;
         max-width: 1000px;
         height: 100%;
@@ -121,7 +121,7 @@ section{
 
 @media (max-width: 320px){
     .pop-content {
-        background: url(/assets/home-images/home-banner-320.png);
+        background: url(https://github.com/guifami/shop-4-devs-frontend/assets/home-images/home-banner-320.png);
         width: 100%;
         max-width: 1000px;
         height: 100%;
