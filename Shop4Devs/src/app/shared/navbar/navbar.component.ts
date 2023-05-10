@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { faSearch, faShoppingCart, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingCart, faBars, faTimes, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faTiktok, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   faShoppingCart = faShoppingCart;
   faBars = faBars;
   faTimes = faTimes;
+  faUser = faUser;
 
   faFacebook = faFacebook;
   faInstagram = faInstagram;
@@ -24,6 +25,7 @@ export class NavbarComponent implements OnInit {
   isCollapsed: boolean = false;
   isCartOpened: boolean = false;
   isSearchOpened: boolean = false;
+  isUserOpened: boolean = false;
 
   constructor() {}
 
@@ -43,18 +45,46 @@ export class NavbarComponent implements OnInit {
 
   menuClick(): void{
     this.isCollapsed = !this.isCollapsed;
+
     if(this.isSearchOpened)
-    {
-      this.isSearchOpened = !this.isSearchOpened
-    }
+      this.isSearchOpened = !this.isSearchOpened;
+
     if(this.isCartOpened)
-    {
-      this.isCartOpened = !this.isCartOpened
-    }
+      this.isCartOpened = !this.isCartOpened;
+
+    if(this.isUserOpened)
+      this.isUserOpened = !this.isUserOpened;
   }
 
   cartClick(): void{
     this.isCartOpened = !this.isCartOpened;
+
+    if(this.isCollapsed)
+      this.isCollapsed = !this.isCollapsed;
+    
+    if(this.isSearchOpened)
+      this.isSearchOpened = !this.isSearchOpened;
+    
+    if(this.isUserOpened)
+      this.isUserOpened = !this.isUserOpened;
+    
+  }
+
+  searchClick(): void{
+    this.isSearchOpened = !this.isSearchOpened;
+
+    if(this.isCollapsed)
+      this.isCollapsed = !this.isCollapsed;
+
+    if(this.isCartOpened)
+      this.isCartOpened = !this.isCartOpened;
+
+    if(this.isUserOpened)
+      this.isUserOpened = !this.isUserOpened;
+  }
+
+  profileClick(): void{
+    this.isUserOpened = !this.isUserOpened;
     if(this.isCollapsed)
     {
       this.isCollapsed = !this.isCollapsed
@@ -62,14 +92,6 @@ export class NavbarComponent implements OnInit {
     if(this.isSearchOpened)
     {
       this.isSearchOpened = !this.isSearchOpened
-    }
-  }
-
-  searchClick(): void{
-    this.isSearchOpened = !this.isSearchOpened;
-    if(this.isCollapsed)
-    {
-      this.isCollapsed = !this.isCollapsed
     }
     if(this.isCartOpened)
     {

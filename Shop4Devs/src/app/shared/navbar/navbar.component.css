@@ -59,6 +59,7 @@ html::-webkit-scrollbar-thumb{
     margin: 0 1rem;
     font-size: 1.1rem;
     color: var(--black);
+    text-decoration: none;
     transition: 0.3s ease;
 }
 
@@ -124,6 +125,44 @@ html::-webkit-scrollbar-thumb{
     transition: 0.2s ease;
 }
 
+.header .user-options{
+    position: absolute;
+    right: 1%;
+    top: 70px;
+    background-color: var(--white);
+    padding: 2px;
+    border: 1px solid var(--border-user-options);
+    transform: scaleY(0);
+    height: auto;
+    width: 10rem;
+    margin-top: 2px; margin-right: 2px;
+}
+
+.header .user-options.active{
+    transform: scaleY(1);
+}
+
+.header .user-options p{
+    width: 100%;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--light-black);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.header .user-options p:hover{
+    color: var(--hover-color);
+    transition: 0.2s ease;
+}
+
+.header .user-options hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-color: var(--border-user-options);
+    opacity: 20%;
+}
+
 .header .cart-items-container{
     position: absolute;
     top: 100%; right: -100%;
@@ -132,8 +171,8 @@ html::-webkit-scrollbar-thumb{
     width: 20rem;
     margin-top: 2px; margin-right: 2px;
     background: var(--white);
-    border: solid 1px rgba(84, 84, 84, 0.3);
-    box-shadow: 5px 2px 2px #d5d5d5d4;
+    border: var(--cart-border);
+    box-shadow: 5px 2px 2px var(--cart-shadow);
     padding: 0;
 }
 

@@ -7,7 +7,7 @@
 
   <nav 
   class="navbar" [class.active]="isCollapsed">
-    <a>Home</a>
+    <a routerLink="home">Home</a>
     <a>Sobre</a>
     <a>Categorias</a>
     <a>Produtos</a>
@@ -17,12 +17,19 @@
   <div class="icons">
     <fa-icon [icon]="faSearch" id="search-btn" (click)="searchClick()"></fa-icon>
     <fa-icon [icon]="faShoppingCart" id="cart-btn" (click)="cartClick()"></fa-icon>
+    <fa-icon [icon]="faUser" id="perfil-btn" (click)="profileClick()"></fa-icon>
     <fa-icon [icon]="faBars" id="menu-btn" (click)="menuClick()"></fa-icon>
   </div>
 
   <div class="search-form" [class.active]="isSearchOpened">
     <input type="search" id="search-box" placeholder="Search:">
     <label for="search-box"><fa-icon [icon]="faSearch"></fa-icon></label>
+  </div>
+
+  <div class="user-options" [class.active]="isUserOpened">
+    <p routerLink="/login" class="login-title">Login</p>
+    <hr>
+    <p routerLink="/register" class="register-title">Cadastro</p>
   </div>
 
   <div class="cart-items-container" [class.active]="isCartOpened">

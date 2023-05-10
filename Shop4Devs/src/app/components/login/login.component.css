@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  section{
+    height: 85vh;
+  }
+
+  .login-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 420px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    box-shadow: 1px 0.5px 2px 1px var(--login-register-box-shadow);
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--login-texts);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-black);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--light-black);
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-black);
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--login-texts);
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--login-texts);
+    border: solid 2px var(--login-texts);
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+
+  .login-box form a:hover {
+    color: var(--white);
+  }
+  
+  .login-box a:hover {
+    background: var(--login-texts);
+  }
+
+  #loading {
+    margin-left: 43%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: -15px;
+    border: 3px solid var(--loading-first);
+    border-radius: 50%;
+    border-top-color: var(--loading-second);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 570px){
+    .login-box {
+        width: 340px;
+        transition: 0.5s ease;
+      }
+  }
+  @media (max-width: 350px){
+    .login-box {
+        width: 275px;
+        transition: 0.5s ease;
+      }
+  }
