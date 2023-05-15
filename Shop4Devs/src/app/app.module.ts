@@ -15,6 +15,9 @@ import { HomeRecentProductsComponent } from './components/home/home-recent-produ
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MainHomeComponent } from './components/home/main-home/main-home.component';
+import { AuthService } from './services/auth.service';
+import { AuthGuard } from './guards/auth.guard';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,9 +36,10 @@ import { MainHomeComponent } from './components/home/main-home/main-home.compone
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

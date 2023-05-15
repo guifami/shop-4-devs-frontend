@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope, faUser, faKey } from '@fortawesome/free-solid-svg-icons';
 
