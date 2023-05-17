@@ -18,17 +18,7 @@ export class AuthGuard implements CanActivate{
     state: RouterStateSnapshot
   ) : Promise<boolean>{
     
-    try {
-      const isAdmin = await this.auth.checkAdminAccess();
-      if (isAdmin)
-        return true;
-      else
-        return false;
-      
-    } catch (error) {
-        console.error('Erro na verificação do status de administrador:', error);
-        return false;
-    }
+    return true;
     
   }
 

@@ -14,9 +14,4 @@ export class AuthService {
     this.apiURL = environment.baseURL;
   }
 
-  async checkAdminAccess() : Promise<boolean>{
-    const result = await this.http.get<boolean>(`${this.apiURL}/Auth/admin`).toPromise();
-    return !!result;
-  }
-
 }
