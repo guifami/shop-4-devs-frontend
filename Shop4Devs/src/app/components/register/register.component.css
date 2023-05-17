@@ -121,7 +121,7 @@
       margin-left: 43%;
     }
   }
-  @media (max-width: 360px){
+  @media (max-width: 350px){
     .register-box {
         width: 275px;
         transition: 0.5s ease;

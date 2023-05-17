@@ -148,9 +148,11 @@ section{
     }
     .home .content h3{
         display: block;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: monospace;
         font-weight: 400;
     }
-
+    .home .content p{
+        font-size: 0.9rem;
+    }
 }
