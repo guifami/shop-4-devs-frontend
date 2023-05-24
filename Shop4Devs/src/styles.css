@@ -3,6 +3,7 @@
     --navbar-border: solid 1px rgba(84, 84, 84, 0.3);
     --footer-border: solid 1px rgba(84, 84, 84, 0.3);
     --cart-border: solid 1px rgba(84, 84, 84, 0.3);
+    --hover-color-user-options: rgb(245, 245, 245);
     --login-register-box-shadow: #bfbfbf;
     --loading-first: #081d3d;
     --loading-second: #30cfd3;
@@ -20,6 +21,7 @@
     --white: #ffffff;
     --light: #f8f8f8;
     --gray: #5b5b60;
+    --gray-light: #dadada;
 }
 
 body{

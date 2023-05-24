@@ -153,6 +153,7 @@ html::-webkit-scrollbar-thumb{
 
 .header .user-options p:hover{
     color: var(--hover-color);
+    background-color: var(--hover-color-user-options);
     transition: 0.2s ease;
 }
 

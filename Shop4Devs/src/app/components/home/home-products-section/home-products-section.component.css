@@ -50,7 +50,7 @@ h2 span{
 .card img{
     width: 100%;
     align-items: center;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray-light);
 }
 
 .card h3{
